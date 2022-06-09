@@ -12,3 +12,14 @@
   margin-top: 20px;
   margin-left: 500px;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+#homearea{
+  overflow: hidden;
+  background-color: rgb(255, 253, 253);
+}
