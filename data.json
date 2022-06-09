@@ -1,0 +1,22 @@
+{
+    "contacts":[
+        {
+            "title": "Corporate Office",
+            "address": "Gandhi Road, T Nagar",
+            "city": "Chennai",
+            "photo": "chennai.jpg" 
+        },
+        {
+            "title": "Head Office",
+            "address": "New Road, Andheri",
+            "city": "Mumbai",
+            "photo": "mumbai.jpg" 
+        },
+        {
+            "title": "Corporate Office",
+            "address": "Old Road, Indira Nagar",
+            "city": "Bangalore",
+            "photo": "bangalore.jpg" 
+        }
+    ]
+}
