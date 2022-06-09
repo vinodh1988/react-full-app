@@ -1,0 +1,14 @@
+#menulist li{
+  list-style-type: none;
+  float: left;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  font-family: arial;
+ 
+}
+
+#menulist{
+  margin-top: 20px;
+  margin-left: 500px;
+}
