@@ -36,7 +36,7 @@ const About =()=>{
         {
             feedbacks.map(x=><Feedback feedback={x}></Feedback>)
         }
-
+       <h3> Give us your feedback </h3>
         <table>
             <tr>
                 <th>Name</th>
@@ -52,6 +52,9 @@ const About =()=>{
                 style={{height: "70px", width: "600px"}}
                 value={name}  
                 onChange={(e)=>{setName(e.target.value)}}/></td>
+            </tr>
+            <tr>
+                <td><button className="btn btn-primary">Send Feedback</button></td>
             </tr>
         </table>
     </div>
