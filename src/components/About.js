@@ -4,6 +4,11 @@ import Feedback from "./feedback";
 
 const About =()=>{
    let [feedbacks,setFeedbacks]=useState([])
+
+   let [name,setName]=useState("")
+   let [company,setCompany]=useState("")
+   let [message,setMessage]=useState("")
+
    async function readFeedbacks(){
        let response = await axios.get("http://localhost:4500/feedbacks");
        setFeedbacks(response.data)
@@ -31,6 +36,24 @@ const About =()=>{
         {
             feedbacks.map(x=><Feedback feedback={x}></Feedback>)
         }
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" value={name}  onChange={(e)=>{setName(e.target.value)}}/></td>
+            </tr>
+            <tr>
+                <th>Company</th>
+                <td><input type="text" value={company}  onChange={(e)=>{setCompany(e.target.value)}}/></td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td><textarea
+                style={{height: "70px", width: "600px"}}
+                value={name}  
+                onChange={(e)=>{setName(e.target.value)}}/></td>
+            </tr>
+        </table>
     </div>
     )
 }
