@@ -1,31 +1,36 @@
 {
-    "contacts":[
-        {
-            "title": "Corporate Office",
-            "address": "Gandhi Road, T Nagar",
-            "city": "Chennai",
-            "photo": "chennai.jpg" 
-        },
-        {
-            "title": "Head Office",
-            "address": "New Road, Andheri",
-            "city": "Mumbai",
-            "photo": "mumbai.jpg" 
-        },
-        {
-            "title": "Development Center",
-            "address": "Old Road, Indira Nagar",
-            "city": "Bangalore",
-            "photo": "bangalore.jpg" 
-        }
-    ],
-
-    "feedbacks": [
-        {
-        "id": 1,
-        "name": "Raghy",
-        "company" :"ETC limited",
-        "message": "Fantastic time working together. would always want to get back"
-        }
-    ]
+  "contacts": [
+    {
+      "title": "Corporate Office",
+      "address": "Gandhi Road, T Nagar",
+      "city": "Chennai",
+      "photo": "chennai.jpg"
+    },
+    {
+      "title": "Head Office",
+      "address": "New Road, Andheri",
+      "city": "Mumbai",
+      "photo": "mumbai.jpg"
+    },
+    {
+      "title": "Development Center",
+      "address": "Old Road, Indira Nagar",
+      "city": "Bangalore",
+      "photo": "bangalore.jpg"
+    }
+  ],
+  "feedbacks": [
+    {
+      "id": 1,
+      "name": "Raghy",
+      "company": "ETC limited",
+      "message": "Fantastic time working together. would always want to get back"
+    },
+    {
+      "name": "Rahul",
+      "company": "Masterminds",
+      "message": "It was great experience working with you for one of our requirements",
+      "id": 2
+    }
+  ]
 }

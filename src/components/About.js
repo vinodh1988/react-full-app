@@ -1,3 +1,4 @@
+import { toHaveErrorMessage } from "@testing-library/jest-dom/dist/matchers";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Feedback from "./feedback";
@@ -8,6 +9,15 @@ const About =()=>{
    let [name,setName]=useState("")
    let [company,setCompany]=useState("")
    let [message,setMessage]=useState("")
+
+   async function addFeedback(){
+       
+         
+       let response= await axios.post("http://localhost:4500/feedbacks",{
+              name:name,company:company,message:message
+          })
+          readFeedbacks()
+   }
 
    async function readFeedbacks(){
        let response = await axios.get("http://localhost:4500/feedbacks");
@@ -47,14 +57,14 @@ const About =()=>{
                 <td><input type="text" value={company}  onChange={(e)=>{setCompany(e.target.value)}}/></td>
             </tr>
             <tr>
-                <th>Name</th>
+                <th>Message</th>
                 <td><textarea
                 style={{height: "70px", width: "600px"}}
-                value={name}  
-                onChange={(e)=>{setName(e.target.value)}}/></td>
+                value={message}  
+                onChange={(e)=>{setMessage(e.target.value)}}/></td>
             </tr>
             <tr>
-                <td><button className="btn btn-primary">Send Feedback</button></td>
+                <td><button className="btn btn-primary" onClick={addFeedback}>Send Feedback</button></td>
             </tr>
         </table>
     </div>
