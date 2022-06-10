@@ -38,5 +38,86 @@
       "message": "Ultimate experience to have worked with you.",
       "id": 3
     }
+  ],
+  "serviceFeedbacks": [
+    {
+      "id": 6360,
+      "name": "Arjun",
+      "email": "arjun@gmail.com",
+      "type": "Film and Webinar",
+      "message": "This is a perfect collaboration. Looking forward to work again."
+    },
+    {
+      "id": 8927,
+      "name": "Kiran",
+      "email": "kiran@gmail.com",
+      "type": "Branding and Communication",
+      "message": "This was an excellent project experience. Budget was too good."
+    },
+    {
+      "id": 7321,
+      "name": "Arun",
+      "email": "arun@gmail.com",
+      "type": "Branding and Communication",
+      "message": "Superb to Work with you. Looking forward to collaborate more."
+    },
+    {
+      "id": 1530,
+      "name": "Narayan",
+      "email": "narayan@gmail.com",
+      "type": "Inbound and Content Marketing",
+      "message": "Content Marketing was so so good."
+    },
+    {
+      "id": 6894,
+      "name": "Nilesh",
+      "email": "nilesh@gmail.com",
+      "type": "Inbound and Content Marketing",
+      "message": "Best in this area of work"
+    },
+    {
+      "id": 8934,
+      "name": "Josh",
+      "email": "josh@gmail.com",
+      "type": "Digital Marketing",
+      "message": "Digital Marketing is challenging but it was done so clean here."
+    },
+    {
+      "id": 815,
+      "name": "Kethan",
+      "email": "kethan@gmail.com",
+      "type": "Digital Marketing",
+      "message": "This is the place for Digital Marketing"
+    },
+    {
+      "id": 7442,
+      "name": "Roger",
+      "email": "roger@gmail.com",
+      "type": "ECommerce Websites",
+      "message": "My Ecommerce business picked up because of these guyz"
+    },
+    {
+      "id": 2446,
+      "name": "Ashish",
+      "email": "ashish@gmail.com",
+      "type": "ECommerce Websites",
+      "message": "These people are specialist in Ecommerce space"
+    },
+    {
+      "id": 8615,
+      "name": "Randy",
+      "email": "randy@gmail.com",
+      "type": "Market Analysis",
+      "message": "Market analysis is best done here"
+    }
+  ],
+  "options": [
+    "Film and Webinar",
+    "Digital Marketing",
+    "Branding and Communication",
+    "Inbound and Content Marketing",
+    "ECommerce Websites" ,  
+    "Market Analysis",
+    "All"
   ]
 }
