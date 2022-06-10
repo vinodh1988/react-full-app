@@ -23,3 +23,18 @@ a{
   overflow: hidden;
   background-color: rgb(255, 253, 253);
 }
+
+.feedback {
+  width: 800px;
+  min-height: 100px;
+  background-color: rgb(195, 196, 196);
+  color: rgb(41, 41, 54);
+  font-family: arial;
+  padding: 15px;
+  margin: 20px;
+
+}
+
+.feedback h3{
+  color: rgb(3, 3, 55);
+}

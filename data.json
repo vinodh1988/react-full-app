@@ -18,5 +18,14 @@
             "city": "Bangalore",
             "photo": "bangalore.jpg" 
         }
+    ],
+
+    "feedbacks": [
+        {
+        "id": 1,
+        "name": "Raghy",
+        "company" :"ETC limited",
+        "message": "Fantastic time working together. would always want to get back"
+        }
     ]
 }
