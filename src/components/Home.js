@@ -1,5 +1,6 @@
 import axios from "axios"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import { Context } from "../context";
 import ServiceFeed from "./servicefeed"
 
 const Home =()=>{
@@ -20,6 +21,9 @@ const Home =()=>{
     const [type,setType]=useState("All")
     const [options,setOptions]=useState(["All"])
 
+    let {services,addServices}=useContext(Context)
+    let [servicelist,setServicelist]=useState(services);
+
     useEffect(()=>{
         readData();
     },[type])
@@ -29,6 +33,10 @@ const Home =()=>{
     },[])
     return(
         <div>
+            <h3> Our Services</h3>
+            {
+                servicelist.map(x=><div className="alert alert-info">{x}</div>)
+            }
               <h3>Service Feedbacks</h3>
               <select value={type} onChange={(e)=>{
                   setType(e.target.value) }}>
