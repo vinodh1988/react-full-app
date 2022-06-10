@@ -2,6 +2,10 @@ import axios from "axios"
 import { useContext, useEffect, useState } from "react"
 import { Context } from "../context";
 import ServiceFeed from "./servicefeed"
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 const Home =()=>{
     async function readData(){
@@ -38,10 +42,17 @@ const Home =()=>{
                 servicelist.map(x=><div className="alert alert-info">{x}</div>)
             }
               <h3>Service Feedbacks</h3>
-              <select value={type} onChange={(e)=>{
+    <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label">Service</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          label="Service"
+          value={type} onChange={(e)=>{
                   setType(e.target.value) }}>
-                    {options.map(x=><option key={x}>{x}</option>)}
-              </select>
+                    {options.map(x=><MenuItem key={x} value={x}>{x}</MenuItem>)}
+              </Select>
+    </FormControl>
         {
             feedbacks.map(x=><ServiceFeed key={x.id} feedback={x}></ServiceFeed>)
         }
